@@ -25,6 +25,12 @@ npm install --save get-google-crawl-errors
 ```js
 var getGoogleCrawlErrors = require('get-google-crawl-errors')
 
+/**
+ * A list of errors.
+ * @type     {Object}
+ * @property {String} url
+ * @property {String} code
+ */
 var errors = getGoogleCrawlErrors.get()
 ```
 
