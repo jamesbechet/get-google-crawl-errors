@@ -18,7 +18,7 @@ it('gets the errors on the current page', () => {
   // Init
   const getGoogleCrawlErrors = require('../')
   const url                  = 'https://www.test.com'
-  const code                 = 404
+  const code                 = '404'
   const elements             = [{
     innerText : url,
     nextSibling : {
@@ -38,7 +38,7 @@ it('gets the errors on the current page', () => {
   expect(getElementsByClassNameSpy.mock.calls.length).toBe(1)
   expect(errors).toEqual([{
     url,
-    code,
+    code : parseInt(code, 10),
   }])
   expect(nextPageButtonDisabled.click.mock.calls.length).toBe(0)
 
@@ -75,7 +75,7 @@ it('gets the errors on the current page then navigates to the next one', () => {
   ])
   const getGoogleCrawlErrors = require('../')
   const url                  = 'https://www.test.com'
-  const code                 = 404
+  const code                 = '404'
   const elements             = [{
     innerText : url,
     nextSibling : {
@@ -97,7 +97,10 @@ it('gets the errors on the current page then navigates to the next one', () => {
   // Assert the errors got returned
   expect(getElementsByClassNameSpy).toBeCalledWith('row-action-cell')
   expect(getElementsByClassNameSpy.mock.calls.length).toBe(2)
-  expect(errors).toEqual([{ url, code }, { url, code }])
+  expect(errors).toEqual([
+    { url, code : parseInt(code, 10) },
+    { url, code : parseInt(code, 10) },
+  ])
 
   // Cleanup
   getElementsByClassNameSpy.mockReset()

@@ -97,7 +97,7 @@
    */
 	var getGoogleCrawlErrors     = {}
 	getGoogleCrawlErrors.get     = get
-	getGoogleCrawlErrors.version = '1.0.0'
+	getGoogleCrawlErrors.version = '1.0.2'
 
   return getGoogleCrawlErrors
 
