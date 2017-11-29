@@ -1,7 +1,7 @@
 {
   "name": "get-google-crawl-errors",
   "description": "A JavaScript library that allows you to get a list of urls and their error codes from the Google's webmasters crawl errors tool.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "author": {
     "name": "James Bechet",

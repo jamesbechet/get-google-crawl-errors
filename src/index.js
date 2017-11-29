@@ -39,7 +39,7 @@
 			var url  = element.innerText
 			var code = element.nextSibling.innerText
 			errors.push({
-				code : code,
+				code : parseInt(code.replace('\n', ''), 10),
 				url  : url.replace('\n', ''),
 			})
 			return errors

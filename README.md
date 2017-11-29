@@ -29,7 +29,7 @@ var getGoogleCrawlErrors = require('get-google-crawl-errors')
  * A list of errors.
  * @type     {Object}
  * @property {String} url
- * @property {String} code
+ * @property {Number} code
  */
 var errors = getGoogleCrawlErrors.get()
 ```
