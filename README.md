@@ -1,7 +1,7 @@
 # Get Google Crawl Errors [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url]
 
-[travis-image]: https://img.shields.io/travis/jamesbechet/get-google-crawl-errors/master.svg
-[travis-url]: https://travis-ci.org/jamesbechet/get-google-crawl-errors
+[travis-image]: https://app.travis-ci.com/jamesbechet/get-google-crawl-errors.svg?branch=master
+[travis-url]: https://app.travis-ci.com/github/jamesbechet/get-google-crawl-errors
 [npm-image]: https://img.shields.io/npm/v/get-google-crawl-errors.svg
 [npm-url]: https://npmjs.org/package/get-google-crawl-errors
 [downloads-image]: https://img.shields.io/npm/dm/get-google-crawl-errors.svg
