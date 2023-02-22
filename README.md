@@ -10,9 +10,9 @@
 ## A JavaScript library that allows you to get a list of urls and their error codes from the Google's webmasters crawl errors tool.
 
 ### Why?
-This tool is useful if you're trying to fix 404s errors on your website using Google Webmaster Tools.
-Instead of individually fixing each url, you could automate your redirect system using this tool.
-Navigate to the [Google Webmasters Tool](https://www.google.com/webmasters/tools/crawl-errors) and run (copy/paste) the script.
+This tool is useful if you're trying to fix 404s errors on your website using Google Search Console Tools.
+Instead of individually fixing each url, you could automate your redirect system using this script.
+Navigate to the [Google Search Console Tools](https://search.google.com/u/1/search-console/index) -> Indexing -> Pages -> Choose "Soft 404" for example -> then run (copy/paste) the script.
 
 ### Install
 
@@ -26,13 +26,11 @@ npm install --save get-google-crawl-errors
 var getGoogleCrawlErrors = require('get-google-crawl-errors')
 
 /**
- * A list of errors.
- * @type     {Object}
- * @property {String} url
- * @property {Number} code
+ * A list of error urls.
+ * @type {String[]}
  */
-var errors = getGoogleCrawlErrors.get()
+var errorUrls = getGoogleCrawlErrors.get()
 ```
 
 ### License
-MIT. Copyright (C) [James Bechet](http://jamesbechet.com)
+MIT. Copyright (C) [James Bechet](https://jamesbechet.github.io/jamesbechet/)
